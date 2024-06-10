@@ -38,4 +38,19 @@ public class ListaTarefa {
         System.out.println(tarefaList);
     }
 
+    public static void main(String[] args) {
+        ListaTarefa listaTarefa = new ListaTarefa(); // Não preciso colocar o diammond pq a minha classe ja está como <>
+
+        System.out.println("O número Total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
+
+        listaTarefa.adicionarTarefa("Tarefa 1");
+        listaTarefa.adicionarTarefa("Tarefa 1");
+        listaTarefa.adicionarTarefa("Tarefa 2");
+        System.out.println("O número Total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
+
+        listaTarefa.removerTarefa("Tarefa 2");
+        System.out.println("O número Total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
+
+        listaTarefa.obterDescricoesTarefas(); // fiz override no toString da classe Tarefa
+    }
 }
