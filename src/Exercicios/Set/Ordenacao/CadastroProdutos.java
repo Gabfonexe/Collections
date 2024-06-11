@@ -28,10 +28,26 @@ public class CadastroProdutos {
 
     public Set<Produto> exibirProdutoPorPreco(){
         Set<Produto> produtoPorPreco =  new TreeSet<>(new ComparatorPorPreco());
-        produtoSet.addAll(produtoSet);
+        produtoPorPreco.addAll(produtoSet);
         return produtoPorPreco;
     }
+
+    public static void main(String[] args) {
+        CadastroProdutos cadastroProdutos = new CadastroProdutos();
+
+        cadastroProdutos.adicionarProduto(1L, "Produto 5", 15d, 5);
+        cadastroProdutos.adicionarProduto(2L, "Produto 8", 20d, 10);
+        cadastroProdutos.adicionarProduto(1L, "Produto 3", 10d, 2);
+        cadastroProdutos.adicionarProduto(9L, "Produto 9", 2d, 2);
+
+
+
+
+    }
 }
+
+
+
 
 class ComparatorPorPreco implements Comparator<Produto>{
 
@@ -41,4 +57,5 @@ class ComparatorPorPreco implements Comparator<Produto>{
     public int compare(Produto p1, Produto p2){
         return Double.compare(p1.getPreco(), p2.getPreco());
     }
+
 }
