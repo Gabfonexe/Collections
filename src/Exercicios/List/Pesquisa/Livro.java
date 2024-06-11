@@ -1,4 +1,4 @@
-package Exercicios.Pesquisa;
+package Exercicios.List.Pesquisa;
 
 public class Livro {
 
