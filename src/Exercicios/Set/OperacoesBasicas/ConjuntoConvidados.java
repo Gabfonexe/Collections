@@ -1,4 +1,4 @@
-package Exercicios.Set;
+package Exercicios.Set.OperacoesBasicas;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -39,14 +39,18 @@ public class ConjuntoConvidados {
     public static void main(String[] args) {
 
         ConjuntoConvidados conjuntoConvidados = new ConjuntoConvidados();
-        System.out.println("Existem " + conjuntoConvidados.contarConvidado() + "Convidado(S) dentro do set de convidados");
+        System.out.println("Existem " + conjuntoConvidados.contarConvidado() + " Convidado(S) dentro do set de convidados");
 
         conjuntoConvidados.adicionarConvidado("Convidado 1", 1234);
         conjuntoConvidados.adicionarConvidado("Convidado 1", 1234);
         conjuntoConvidados.adicionarConvidado("Convidado 1", 1234);
         conjuntoConvidados.adicionarConvidado("Convidado 1", 1234);
 
-        System.out.println("Existem " + conjuntoConvidados.contarConvidado() + "Convidado(S) dentro do set de convidados");
+        System.out.println("Existem " + conjuntoConvidados.contarConvidado() + " Convidado(S) dentro do set de convidados");
+
+
+        conjuntoConvidados.remvoerConvidadoPorCodigoConvite(1234);
+        System.out.println("Existem " + conjuntoConvidados.contarConvidado() + " Convidado(S) dentro do set de convidados");
 
 
 
