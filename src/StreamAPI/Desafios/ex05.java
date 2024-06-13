@@ -21,6 +21,5 @@ public class ex05 {
     double resultado = novaLista.stream().reduce(0, Integer::sum);
     System.out.println(resultado / qtd);
     
-  }
-  
+  } 
 }
